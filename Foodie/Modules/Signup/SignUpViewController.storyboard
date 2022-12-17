@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Oswald-Bold.ttf">
+            <string>Oswald-Bold</string>
+        </array>
+        <array key="Oswald-Medium.ttf">
+            <string>Oswald-Medium</string>
+        </array>
+        <array key="Oswald-Regular.ttf">
+            <string>Oswald-Regular</string>
+        </array>
+        <array key="SF-Pro.ttf">
+            <string>SFPro-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Sign Up View Controller-->
+        <scene sceneID="SS2-Nv-N8I">
+            <objects>
+                <viewController storyboardIdentifier="SignUpViewController" id="vwg-4N-xF5" customClass="SignUpViewController" customModule="Foodie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BmN-iZ-HfX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4lK-QM-3qx">
+                                <rect key="frame" x="147" y="104" width="120" height="41"/>
+                                <fontDescription key="fontDescription" name="Oswald-Bold" family="Oswald" pointSize="35"/>
+                                <color key="textColor" name="darkText"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="D3R-b0-JvU">
+                                <rect key="frame" x="20" y="195" width="374" height="44"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1pQ-gl-8Lh">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.078431372550000003" green="0.10980392160000001" blue="0.12549019610000001" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="MWc-wa-R7s">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                            </constraint>
+                                        </constraints>
+                                        <color key="textColor" name="darkText"/>
+                                        <fontDescription key="fontDescription" name="Oswald-Regular" family="Oswald" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
+                                    </textField>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter a valid email address." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85W-CC-J8H">
+                                        <rect key="frame" x="0.0" y="0.0" width="232.5" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="SFPro-Medium" family="SF Pro" pointSize="15"/>
+                                        <color key="textColor" red="1" green="0.35686274509999999" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="1pQ-gl-8Lh" secondAttribute="trailing" id="ltv-Cc-vqu"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ES-Br-Xch">
+                                <rect key="frame" x="20" y="254" width="66.5" height="17.5"/>
+                                <fontDescription key="fontDescription" name="Oswald-Regular" family="Oswald" pointSize="15"/>
+                                <color key="textColor" name="bluishGrey"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D9l-8i-Afg">
+                                <rect key="frame" x="20" y="276.5" width="374" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.078431372550000003" green="0.10980392160000001" blue="0.12549019610000001" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Z3U-eL-KdK">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                    </constraint>
+                                </constraints>
+                                <color key="textColor" name="darkText"/>
+                                <fontDescription key="fontDescription" name="Oswald-Regular" family="Oswald" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSR-Ub-4Oj">
+                                <rect key="frame" x="20" y="452" width="374" height="44"/>
+                                <color key="backgroundColor" name="veryLightBlue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="TJD-3J-dmv">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Oswald-Medium" family="Oswald" pointSize="17"/>
+                                <state key="normal" title="Sign up">
+                                    <color key="titleColor" name="coolGray"/>
+                                </state>
+                                <connections>
+                                    <action selector="signupBtnTapped:" destination="vwg-4N-xF5" eventType="touchUpInside" id="PEq-2s-mQ8"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="d32-1i-WQW">
+                                <rect key="frame" x="82" y="531" width="250" height="32"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gd-nT-vOG">
+                                        <rect key="frame" x="0.0" y="0.0" width="197" height="32"/>
+                                        <fontDescription key="fontDescription" name="Oswald-Regular" family="Oswald" pointSize="17"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiG-3M-hwr">
+                                        <rect key="frame" x="202" y="0.0" width="48" height="32"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Oswald-Regular" family="Oswald" pointSize="17"/>
+                                        <state key="normal" title="Signin">
+                                            <color key="titleColor" name="coralPink"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="signinBtnTapped:" destination="vwg-4N-xF5" eventType="touchUpInside" id="hJf-mX-zdd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDE-Tl-LWc">
+                                <rect key="frame" x="20" y="167.5" width="37" height="17.5"/>
+                                <fontDescription key="fontDescription" name="Oswald-Regular" family="Oswald" pointSize="15"/>
+                                <color key="textColor" name="bluishGrey"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOe-Bj-Duo">
+                                <rect key="frame" x="20" y="330.5" width="124" height="17.5"/>
+                                <fontDescription key="fontDescription" name="Oswald-Regular" family="Oswald" pointSize="15"/>
+                                <color key="textColor" name="bluishGrey"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KUJ-cg-Fyt">
+                                <rect key="frame" x="20" y="358" width="374" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.078431372550000003" green="0.10980392160000001" blue="0.12549019610000001" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="UlS-Sf-jvi">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                    </constraint>
+                                </constraints>
+                                <color key="textColor" name="darkText"/>
+                                <fontDescription key="fontDescription" name="Oswald-Regular" family="Oswald" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e6R-Ds-1lM" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                                <rect key="frame" x="162" y="403" width="90" height="90"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="sqo-xr-gOi"/>
+                                    <constraint firstAttribute="width" constant="90" id="wer-qf-Wah"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GZW-97-IrF"/>
+                        <color key="backgroundColor" red="0.97254901959999995" green="0.97647058819999999" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4lK-QM-3qx" firstAttribute="top" secondItem="GZW-97-IrF" secondAttribute="top" constant="60" id="27X-ow-0g5"/>
+                            <constraint firstItem="e6R-Ds-1lM" firstAttribute="centerY" secondItem="BmN-iZ-HfX" secondAttribute="centerY" id="BUx-aN-oQa"/>
+                            <constraint firstItem="VOe-Bj-Duo" firstAttribute="leading" secondItem="GZW-97-IrF" secondAttribute="leading" constant="20" id="Cqw-63-JdW"/>
+                            <constraint firstItem="KUJ-cg-Fyt" firstAttribute="top" secondItem="VOe-Bj-Duo" secondAttribute="bottom" constant="10" id="FuL-zr-v0x"/>
+                            <constraint firstItem="GZW-97-IrF" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VOe-Bj-Duo" secondAttribute="trailing" symbolic="YES" id="G1W-JE-2ZI"/>
+                            <constraint firstItem="GZW-97-IrF" firstAttribute="trailing" secondItem="KUJ-cg-Fyt" secondAttribute="trailing" constant="20" id="Gyx-6v-Ear"/>
+                            <constraint firstItem="D9l-8i-Afg" firstAttribute="leading" secondItem="BmN-iZ-HfX" secondAttribute="leading" constant="20" id="J9l-aX-qN7"/>
+                            <constraint firstItem="ZSR-Ub-4Oj" firstAttribute="leading" secondItem="BmN-iZ-HfX" secondAttribute="leading" constant="20" id="JzN-y9-5xr"/>
+                            <constraint firstItem="d32-1i-WQW" firstAttribute="centerX" secondItem="BmN-iZ-HfX" secondAttribute="centerX" id="Tbc-g2-ygR"/>
+                            <constraint firstItem="D3R-b0-JvU" firstAttribute="top" secondItem="cDE-Tl-LWc" secondAttribute="bottom" constant="10" id="TrQ-TJ-TL4"/>
+                            <constraint firstAttribute="trailing" secondItem="D9l-8i-Afg" secondAttribute="trailing" constant="20" id="UDi-8r-QQA"/>
+                            <constraint firstItem="e6R-Ds-1lM" firstAttribute="centerX" secondItem="BmN-iZ-HfX" secondAttribute="centerX" id="VEM-KD-AZT"/>
+                            <constraint firstItem="D9l-8i-Afg" firstAttribute="top" secondItem="7ES-Br-Xch" secondAttribute="bottom" constant="5" id="a8n-7F-0o0"/>
+                            <constraint firstItem="cDE-Tl-LWc" firstAttribute="bottom" secondItem="4lK-QM-3qx" secondAttribute="bottom" constant="40" id="gB3-Cl-YWi"/>
+                            <constraint firstItem="7ES-Br-Xch" firstAttribute="top" secondItem="D3R-b0-JvU" secondAttribute="bottom" constant="15" id="gjw-dl-xcS"/>
+                            <constraint firstItem="D3R-b0-JvU" firstAttribute="leading" secondItem="GZW-97-IrF" secondAttribute="leading" constant="20" id="hOT-Rx-qHU"/>
+                            <constraint firstItem="cDE-Tl-LWc" firstAttribute="leading" secondItem="GZW-97-IrF" secondAttribute="leading" constant="20" id="jWV-oX-sZE"/>
+                            <constraint firstItem="KUJ-cg-Fyt" firstAttribute="leading" secondItem="GZW-97-IrF" secondAttribute="leading" constant="20" id="kD5-bt-FXY"/>
+                            <constraint firstItem="GZW-97-IrF" firstAttribute="trailing" secondItem="D3R-b0-JvU" secondAttribute="trailing" constant="20" id="lbp-hz-DSZ"/>
+                            <constraint firstItem="GZW-97-IrF" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7ES-Br-Xch" secondAttribute="trailing" symbolic="YES" id="nGJ-aR-Ef1"/>
+                            <constraint firstItem="VOe-Bj-Duo" firstAttribute="top" secondItem="D9l-8i-Afg" secondAttribute="bottom" constant="10" id="pDE-Do-b0X"/>
+                            <constraint firstItem="4lK-QM-3qx" firstAttribute="centerX" secondItem="BmN-iZ-HfX" secondAttribute="centerX" id="pca-St-wUq"/>
+                            <constraint firstItem="7ES-Br-Xch" firstAttribute="leading" secondItem="cDE-Tl-LWc" secondAttribute="leading" id="sGC-9x-Pkp"/>
+                            <constraint firstItem="d32-1i-WQW" firstAttribute="top" secondItem="ZSR-Ub-4Oj" secondAttribute="bottom" constant="35" id="sep-A4-mAW"/>
+                            <constraint firstItem="ZSR-Ub-4Oj" firstAttribute="top" secondItem="KUJ-cg-Fyt" secondAttribute="bottom" constant="50" id="v0s-Ae-0k1"/>
+                            <constraint firstItem="GZW-97-IrF" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cDE-Tl-LWc" secondAttribute="trailing" symbolic="YES" id="w5T-4x-6Zd"/>
+                            <constraint firstAttribute="trailing" secondItem="ZSR-Ub-4Oj" secondAttribute="trailing" constant="20" id="wPt-lo-lsi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="e6R-Ds-1lM" id="sB9-gw-TZp"/>
+                        <outlet property="confirmPassTextField" destination="KUJ-cg-Fyt" id="ZeP-p7-JtO"/>
+                        <outlet property="emailTextField" destination="1pQ-gl-8Lh" id="TPB-UZ-T55"/>
+                        <outlet property="passTextField" destination="D9l-8i-Afg" id="KCg-8Q-YpI"/>
+                        <outlet property="signUpBtn" destination="ZSR-Ub-4Oj" id="Jgt-x1-efx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f41-wQ-hK4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-163.768115942029" y="109.15178571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="bluishGrey">
+            <color red="0.48600000143051147" green="0.54500001668930054" blue="0.5690000057220459" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="coolGray">
+            <color red="0.62000000476837158" green="0.68599998950958252" blue="0.70999997854232788" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="coralPink">
+            <color red="1" green="0.35699999332427979" blue="0.37999999523162842" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="darkText">
+            <color red="0.078000001609325409" green="0.10999999940395355" blue="0.125" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="veryLightBlue">
+            <color red="0.90200001001358032" green="0.92199999094009399" blue="0.92900002002716064" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
